@@ -61,7 +61,7 @@ A custom [Appium Inspector](https://github.com/appium/appium-inspector) plugin w
 
 ```bash
 # Install the plugin from this repository
-appium plugin install --source=github --package=LevanKerdikashvili/appium-inspector-step-recorder
+appium plugin install LevanKerdikashvili/appium-inspector-step-recorder --source=github
 
 # Start Appium with the plugin enabled
 appium --use-plugins=inspector
