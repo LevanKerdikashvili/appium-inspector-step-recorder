@@ -28,6 +28,10 @@ A custom [Appium Inspector](https://github.com/appium/appium-inspector) plugin w
 ```bash
 # Clone this repository
 git clone https://github.com/LevanKerdikashvili/appium-inspector-step-recorder.git
+cd appium-inspector-step-recorder
+
+# Install dependencies
+npm install
 
 # If you already have the official inspector plugin, uninstall it first
 appium plugin uninstall inspector
