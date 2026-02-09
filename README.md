@@ -33,7 +33,7 @@ git clone https://github.com/LevanKerdikashvili/appium-inspector-step-recorder.g
 appium plugin uninstall inspector
 
 # Install from the local clone (use absolute path)
-appium plugin install --source=local /absolute/path/to/appium-inspector-step-recorder
+appium plugin install --source=local ~/appium-inspector-step-recorder
 
 # Start Appium with the plugin enabled
 appium --use-plugins=inspector
@@ -86,14 +86,6 @@ Then open your browser at: **http://localhost:4723/inspector**
 
 - **JSON**: Export/import step collections as `.json` files
 - **HTML Report**: Generate a styled HTML report of current steps
-
----
-
-## Troubleshooting
-
-- **Steps fail on re-run**: Make sure the app is in the same state; element locators may have changed
-- **Folder data lost**: Folders are in `localStorage` — use JSON export to back up
-- **Plugin not loading**: Ensure `--use-plugins=inspector` is set and `dist-browser/` exists
 
 ---
 
