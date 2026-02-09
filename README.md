@@ -32,8 +32,8 @@ git clone https://github.com/LevanKerdikashvili/appium-inspector-step-recorder.g
 # If you already have the official inspector plugin, uninstall it first
 appium plugin uninstall inspector
 
-# Install from the local clone
-appium plugin install inspector --source=local --package=./appium-inspector-step-recorder
+# Install from the local clone (use absolute path)
+appium plugin install --source=local /absolute/path/to/appium-inspector-step-recorder
 
 # Start Appium with the plugin enabled
 appium --use-plugins=inspector
