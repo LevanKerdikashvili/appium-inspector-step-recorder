@@ -1,0 +1,54 @@
+{
+  "name": "appium-inspector-step-recorder",
+  "version": "1.0.0",
+  "description": "Appium Inspector plugin with Step Recorder - record, edit, organize and replay mobile test steps",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LevanKerdikashvili/appium-inspector-step-recorder.git"
+  },
+  "author": {
+    "name": "Levan Kerdikashvili",
+    "url": "https://github.com/LevanKerdikashvili"
+  },
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/LevanKerdikashvili/appium-inspector-step-recorder/issues"
+  },
+  "keywords": [
+    "appium",
+    "inspector",
+    "step-recorder",
+    "mobile-testing",
+    "test-automation"
+  ],
+  "homepage": "https://github.com/LevanKerdikashvili/appium-inspector-step-recorder",
+  "main": "index.mjs",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./index.mjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "peerDependencies": {
+    "appium": "^3.0.0-beta.0"
+  },
+  "files": [
+    "index.mjs",
+    "package.json",
+    "dist-browser",
+    "README.md"
+  ],
+  "dependencies": {
+    "@appium/base-plugin": "3.0.6"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": "^20.19.0 || ^22.12.0 || >=24.0.0",
+    "npm": ">=10.x"
+  },
+  "appium": {
+    "pluginName": "inspector",
+    "mainClass": "AppiumInspectorPlugin"
+  }
+}
